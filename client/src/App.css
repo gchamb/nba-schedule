@@ -1,0 +1,55 @@
+#root {
+  height: 100vh;
+}
+
+.app {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.schedule {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+}
+
+.schedule-title {
+  align-self: center;
+  text-align: center;
+}
+.schedule-title h1 {
+  color: rgb(255, 115, 0);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(255, 115, 0);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.match-container {
+  display: grid;
+  height: 100%;
+  width: 95%;
+  margin: auto;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .match-container {
+    height: 90%;
+    width: 80%;
+  }
+}
